@@ -63,3 +63,12 @@ print(selfish)
 action  = "i am learning  python"
 print(action.upper())
 print(action.capitalize())
+
+print(action.find('python'))
+print(action.replace('python', 'Golang'))
+
+print(action)
+ # string is immutable , so action  will not change
+
+action2 = action.replace('python', 'Golang')
+print(action2)
