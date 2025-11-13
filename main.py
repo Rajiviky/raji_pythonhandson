@@ -53,6 +53,13 @@ print(selfish[::-1])
 
 # string is immutable , you can't change it
 
-selfish[0] = '8' # this will throw an error
+# selfish[0] = '8' # this will throw an error
 selfish = "hello"
 print(selfish)
+
+
+# built in functions + methods
+
+action  = "i am learning  python"
+print(action.upper())
+print(action.capitalize())
