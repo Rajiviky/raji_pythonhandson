@@ -72,3 +72,10 @@ print(action)
 
 action2 = action.replace('python', 'Golang')
 print(action2)
+
+## Type conversion
+## exercise 
+
+birth_year = input("which year you were born?")
+my_age = 2025 - int(birth_year)
+print(f"your age is {my_age}")
