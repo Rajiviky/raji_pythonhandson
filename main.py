@@ -1,3 +1,5 @@
+# import maskpass
+
 print("Hello, World!")
 name = input("what is your name?")
 print("helooooo " + name)
@@ -79,3 +81,12 @@ print(action2)
 birth_year = input("which year you were born?")
 my_age = 2025 - int(birth_year)
 print(f"your age is {my_age}")
+
+# password checker
+
+username = input("please type the username")
+password = input("please type the password")
+# password = maskpass.askpass( prompt="please type the password", mask="*") */
+password_length = len(password)
+hideden_password = "*" * password_length
+print(f"{username}, your password {hideden_password} is {password_length} long")
