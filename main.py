@@ -90,3 +90,21 @@ password = input("please type the password")
 password_length = len(password)
 hideden_password = "*" * password_length
 print(f"{username}, your password {hideden_password} is {password_length} long")
+
+# Lists
+
+amazon_cart = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(amazon_cart[0:3])
+amazon_cart[0]= 0
+print(amazon_cart)
+
+# Maxtrix
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print(matrix[0][2])
+print(matrix[1][1])
