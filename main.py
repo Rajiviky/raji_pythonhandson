@@ -108,3 +108,47 @@ matrix = [
 
 print(matrix[0][2])
 print(matrix[1][1])
+
+# List methods
+
+basket = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(len(basket))
+
+# adding
+basket.append(11)
+new_basket = basket.append(12)
+# new_basket is None because append method returns None, same goes for insert and extend methods
+print(new_basket)
+print(basket)
+basket.insert(0, 0)
+print(basket)
+basket.extend([12, 13, 14])
+print(basket)
+
+# removing
+
+basket.pop()
+# pop method returns the removed item
+new_basket = basket.pop()
+print(new_basket)
+print(basket)
+basket.pop(0)
+print(basket)
+basket.remove(12)
+print(basket)
+basket.clear()
+print(basket)
+
+bucket  = ['a', 'b', 'c','x', 'd', 'e', 'd']
+print(bucket.index('d'))
+#search for d from index 0 to 5
+print(bucket.index('d', 0, 5))
+print(bucket.count('d'))
+
+# sorting
+
+bucket.sort()
+print(bucket)
+bucket.reverse()
+print(bucket)
+
