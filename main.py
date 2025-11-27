@@ -9,43 +9,33 @@ dictionary = {
 
 print(dictionary['a'])
 print(dictionary['b'])
-dictionary  = [
-  {
+dictionary = [{
     'a': 1,
     'b': 2,
     'c': 3,
     'd': 4
-  },
-  {
+}, {
     'a': 5,
     'b': 6,
     'c': 3,
-    
-  }
-]
+}]
 
 print(dictionary[0]['a'])
 print(dictionary[1]['a'])
 
 # Dictionary keys
 
-dicti  = {
+dicti = {
     123: [1, 2, 3],
     True: 'hello',
-  #this will throw an error because keys must be immutable
+    #this will throw an error because keys must be immutable
     # [100]: True
-  
 }
 print(dicti[123])
 
 # Dictionary methods
 
-user = {
-    'basket': [1, 2, 3],
-    'greet': 'hello',
-    'age': 20
-  
-}
+user = {'basket': [1, 2, 3], 'greet': 'hello', 'age': 20}
 # this will throw an error because the key does not exist
 # print(user['name'])
 
@@ -54,7 +44,7 @@ print(user.get('name'))
 
 # this will not throw an error and will return the default value
 
-print  (user.get('name', 'user'))
+print(user.get('name', 'user'))
 
 # We can create a dictionary this way, but it's not very common
 
@@ -79,7 +69,7 @@ print(user.values())
 
 # print all the items in a dictionary
 
-print(user.items()) # returns a list of tuples , which will learn later
+print(user.items())  # returns a list of tuples , which will learn later
 
 # copy a dictionary
 
@@ -99,7 +89,7 @@ print(user2.pop('age'))
 # this will remove the age item in the dictionary
 print(user2)
 
-# this will remove randomly an item in the dictionary  
+# this will remove randomly an item in the dictionary
 print(user2.popitem())
 print(user2)
 
@@ -114,3 +104,24 @@ print(user2)
 user2.update({'ages': 55})
 
 print(user2)
+
+# Tuple
+
+# Tuple is a data structure like list, but it's immutable
+
+my_tuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+ # this will throw an error because tuple is immutable
+# my_tuple[1] = 'z'
+
+print(my_tuple[1])
+
+# we cannot perform any methods on tuple that will change it, like append, insert, extend, pop, remove, clear, sort, reverse, etc.     # but we can perform methods that will not change it, like count, index, etc.
+
+# then why do we need tuple? because tuple is faster than list, and it's used when we don't want to change the data. Example developer can use tuple whne he wants to make sure that the data will not be changed by mistake.
+
+# Example scenerio , google  maps api, it returns a tuple of latitude and longitude, and we don't want to change it by mistake.
+
+# tuple has 2 methods, count and index
+
+print(my_tuple.count(1))
+print(my_tuple.index(1))
