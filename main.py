@@ -125,3 +125,38 @@ print(my_tuple[1])
 
 print(my_tuple.count(1))
 print(my_tuple.index(1))
+
+#set 
+# set is a data structure that is unordered and does not allow duplicates
+
+my_set = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+print(my_set)
+
+my_set = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 10, 10}
+# this will remove the duplicates, only unique values will be kept
+
+print(my_set)
+
+my_set.add(100)
+my_set.add(2)
+print(my_set)
+# this will not add 2 because it's already in the set
+
+my_list = [1,2,3,4,5,5,6]
+# this will remove the duplicates, only unique values will be kept
+print(set(my_list))
+
+# example we have list of user names and emails  and we want to remove the duplicates. this  is a common use case for set
+
+# below will throw an error becs we cannot access set by index
+# print(my_set[0])
+# we can check if an item is in the set by "in" keyword  "
+print(1 in my_set)
+print(10 in my_set)
+
+# count only unique values
+print(len(my_set))
+
+# convert set to list
+print(list(my_set))
+          
