@@ -159,4 +159,37 @@ print(len(my_set))
 
 # convert set to list
 print(list(my_set))
+
+# set methods
+# below are more like how venn diagram works
+my_set = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+your_set = {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}
+
+# difference
+
+print(my_set.difference(your_set))
+
+# differece_update
+
+print(my_set.difference_update(your_set))
+# discard
+
+print(my_set.discard(5))
+print(my_set)
+
+# intersection
+print(my_set.intersection(your_set))
+# intesection_update
+
+print(my_set.intersection_update(your_set))
+
+# isdisjoint
+print(my_set.isdisjoint(your_set))
+# issubset
+print(my_set.issubset(your_set))
+# issuperset
+print(my_set.issuperset(your_set))
+# union
+print(my_set.union(your_set))
+
           
