@@ -30,3 +30,27 @@ else:
    print(f"your username is {username} and your password is {password}")
 
 # This was truthy and falsy vaules helpeful for us to check if a variable is empty or not
+
+
+# Ternary Operator
+# just clean or short hand way to write if else statement
+# condition_if_true if condition else condition_if_else
+is_friend = True
+can_message = "message allowed" if is_friend else "not allowed to message"
+print(can_message)
+
+
+# Logical Operators
+
+is_magician = True
+is_expert = True
+
+# check if magician and expert,"you are a master magician"
+if is_magician and is_expert:
+   print("you are a master magician")
+   # check if magician but not expert,"at least you're getting there"
+elif  is_magician and not is_expert:
+   print("at least you're getting there")
+   # if you're not a magician:"you need magic powers"
+elif  not is_magician:
+   print("you need magic powers")
