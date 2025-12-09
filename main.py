@@ -54,3 +54,41 @@ elif  is_magician and not is_expert:
    # if you're not a magician:"you need magic powers"
 elif  not is_magician:
    print("you need magic powers")
+
+  #Loops 
+  #range
+
+for item in range(10):
+   print(item)
+ #range us just kike range in golang
+
+for _ in range(10):
+   print(_)   # _ is a convention for unused variables just like _ in golang
+for _ in range(0, 10, 2):
+   print(_)
+
+# quick trick to reverse a string
+# ascending order or descending order
+
+for _ in range(10, 0, -1):
+   print(_)
+
+for  _ in range(10, 0): # this will not work like above because the step is positive and the start is greater than the end
+   print(_)
+
+# quick way to create a list of numbers
+for _ in range(2):
+ print(list(range(10)))
+
+  # enumerate
+   # enumerate is a built in function that returns an enumerate object 
+   # enumerate object is an iterator that produces pairs of index and value
+
+     # enumerate is useful when you want to get the index and the value of a list or a string
+
+for  i, char in enumerate( [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]):
+   print(i, char)
+    # exerise
+for  i, char in enumerate(list(range(100))):
+       if char  == 50:
+          print(f"index of 50 is {i}")
