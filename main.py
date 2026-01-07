@@ -67,3 +67,14 @@ def  super_func(*args, **kwargs):
    # kwargs is a dictionary of keyword arguments
 
 print(super_func(1,2,3,4,5, num1=5, num2=10))
+
+#exercise , highest even number in a list
+
+def highest_even(li):
+   evens = []
+   for item in li:
+     if item % 2 == 0:
+       evens.append(item)
+   return max(evens)
+
+print(highest_even([10,2,3,4,8,11]))
