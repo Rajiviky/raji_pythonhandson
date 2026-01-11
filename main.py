@@ -1,4 +1,5 @@
 #Functons
+from functools import reduce
 
 
 def say_hello():
@@ -78,3 +79,27 @@ def highest_even(li):
    return max(evens)
 
 print(highest_even([10,2,3,4,8,11]))
+
+# mape , filter, zip and reduce
+# map, filter, zip and reduce are built-in functions that are used to apply a function to a sequence of elements and return a list of the results
+
+def  multiply_by2(item):
+  return item * 2
+
+print(list(map(multiply_by2, [1,2,3])))
+
+def  check_even(item):
+  return item % 2 == 0
+   # filter will return a list of items that are true for the function
+print(list(filter(check_even, [1,2,3])))
+
+# zip will return a list of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables
+print(list(zip([1,2,3], [4,5,6])))
+
+# example we  have 2 lists of names and ages and we want to combine them into a list of tuples
+# reudce will apply a function of two arguments cumulatively to the items of a sequence, from left to right, so as to reduce the sequence to a single value
+
+def  accumulator(acc, item):
+   return acc + item
+
+print(reduce(accumulator, [1,2,3], 1))
