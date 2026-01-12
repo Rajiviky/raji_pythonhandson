@@ -103,3 +103,27 @@ def  accumulator(acc, item):
    return acc + item
 
 print(reduce(accumulator, [1,2,3], 1))
+
+
+# list comperhension
+
+# list comperhension is a concise way to create lists
+list1 =  [char for char in 'hello']
+print(list1)
+list2 = [num for num in range(0,100)]
+print(list2)
+list3 = [num**2 for num in range(0,100)]
+print(list3)
+list4 = [num**2 for num in range(0,100) if num % 2 == 0]
+print(list4)
+
+# set and dictionary comperhension
+
+set  = {char for char in 'hello'}
+print(set)
+dict = {num:num**2 for num in range(0,100)}
+print(dict)
+# exercise
+some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
+duplicates =list({char for char in some_list if some_list.count(char) > 1})
+print(duplicates)
