@@ -1,5 +1,12 @@
 #Functons
-from functools import reduce
+# difference way to import
+
+from functools import reduce # package name and then the function name
+import utility # import the whole file
+
+# difference way to import
+
+
 
 
 def say_hello():
@@ -127,3 +134,6 @@ print(dict)
 some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
 duplicates =list({char for char in some_list if some_list.count(char) > 1})
 print(duplicates)
+
+# python moudles
+print(utility.multiply(2, 3))
